@@ -473,7 +473,7 @@ section.features .col-4 {
     font-size: 14px;
   }
   .features-content p {
-    display: none;
+    /* display: none; */
   }
   .features-content p.hidden-sm {
     display: block;

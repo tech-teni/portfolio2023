@@ -1036,7 +1036,7 @@ https://templatemo.com/tm-557-grad-school
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="section-heading" style="color: white; font-size: 1.2rem; last">
+            <div class="section-heading" style="color: white; font-size: 1.2rem; ">
               <h2>Let’s Keep In Touch</h2>
               <p class="mb-5" style="color: white; font-size: 1.2rem;">
                 I am seeking out opportunity to work and collaborate with
@@ -1048,9 +1048,9 @@ https://templatemo.com/tm-557-grad-school
   
             </div>
           </div>
-          <div class='row' style="color: white; text-align: center; width: 100%;">
-            <div class='col-6'> <h5> <i class="bi bi-envelope"></i> yakubganiyat247@gmail.com</h5></div>
-            <div class='col-6'> <h5> <i class="bi bi-telephone"></i> +2348114618720</h5></div>
+          <div class='row contact-con' style="color: white; text-align: center; width: 100%; ">
+            <div class='contact-entity'> <h5> <i class="bi bi-envelope"></i> yakubganiyat247@gmail.com</h5></div>
+            <div class='contact-entity'> <h5> <i class="bi bi-telephone"></i> +2348114618720</h5></div>
             </div>
 
           <div class="col-md-12" style="color: white;">
@@ -1121,6 +1121,7 @@ https://templatemo.com/tm-557-grad-school
 
 }
 
+
 .account-number i{
 color:#ffffff;
 margin-right: 15px;
@@ -1149,14 +1150,46 @@ flex-direction: column;
 }
 .why-us p{
 font-size: 1.4rem;
+padding: 0px !important;
+}
+
+.contact-con{
+  display: flex; 
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .why-us p{
+    font-size: 17px;
+}
+
+.contact-entity h5 {
+ font-size: 15px;
+}
+}
+@media screen and (max-width: 500px) {
+  .why-us p{
+font-size: 15px;
+/* text-align: center; */
+}
+.contact-entity h5 {
+ font-size: 13px;
+}
+
+.contact-con{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
 }
 
 @media screen and (max-width: 400px) {
   .why-us p{
-font-size: 1rem;
-}
+font-size: 14px;
+/* text-align: center; */
+}}
 
-}
+
 .why-us li {
 margin-bottom: 10px;
 /* border: 1px solid white; */
