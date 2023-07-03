@@ -1741,6 +1741,85 @@ footer p a:hover {
   background: url("../../assets/images/portfolio-1.jpg");
 }
 
+
+.eazy-rent{
+  background-repeat: no-repeat;
+  background:   url("../../assets/images/eazi-rent.jpg") !important;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+.admoni{
+  background-repeat: no-repeat;
+  background: url("../../assets/images/admoni.jpg") !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+.admoni-admin{
+  background-repeat: no-repeat;
+  background: url("../../assets/images/admin.jpg") !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+
+
+}
+
+.african{
+  background-repeat: no-repeat;
+  background: url("../../assets/images/african.jpg") !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+
+.cousin{
+  background-repeat: no-repeat;
+  background: url("../../assets/images/realcousins.png") !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+
+.eschool{
+  background-repeat: no-repeat;
+  background: url("../../assets/images/eschool.jpg") !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.landrose{
+  background-repeat: no-repeat;
+  background: url("../../assets/images/landrose.jpg") !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+.blooming{
+  background-repeat: no-repeat;
+  background: url("../../assets/images/blooming.jpg") !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.lagos{
+  background-repeat: no-repeat;
+  background: url("../../assets/images/lagos.jpg") !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
 .main-info {
   width: 100%;
   padding-left: 10px;
@@ -1751,6 +1830,14 @@ footer p a:hover {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   margin-bottom: 20px;
+}
+.maranbanjo{
+  background-repeat: no-repeat;
+  background: url("../../assets/images/mara.jpg") !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 .main-info p {
   margin-bottom: 0px;
@@ -1795,25 +1882,42 @@ footer p a:hover {
   margin-left: 5px;
 }
 .topic {
-  background-color: #0c122868;
+  /* background-color: #0c122868; */
   font-size: 20px;
   padding: 10px 10px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   width: 100%;
   min-height: 200px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+/*  */
+
+  background: rgba(0, 0, 0, 0.671);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+
 }
 
 .topic p {
   font-size: 20px;
-
+font-weight: bold;
   text-transform: capitalize;
+  padding: 5px ;
+color: rgb(237, 235, 235);
+  /*  */
+/* background: rgba(23, 22, 22, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px); */
 }
 
 .package2 .topic p {
   text-transform: capitalize !important;
   font-size: 17px;
 }
+
+
+/* great */
