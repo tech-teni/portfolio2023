@@ -90,27 +90,12 @@ https://templatemo.com/tm-557-grad-school
               aria-label="LinkedIn"
               ><i class="bi bi-linkedin"></i><span class="link-tag">LinkedIn</span></a
             >
-            <div class="hero-link-popover">
-              <button
-                type="button"
-                class="hero-link-trigger github-trigger-btn"
-                aria-haspopup="true"
-                aria-expanded="false"
-                aria-label="GitHub accounts"
-              >
-                <i class="bi bi-github"></i><span class="link-tag">GitHub</span>
-              </button>
-              <div class="popover-menu" id="github-menu">
-                <a href="https://github.com/tech-teni" target="_blank">
-                  <span class="popover-title">Personal</span>
-                  <span class="popover-sub">github.com/tech-teni</span>
-                </a>
-                <a href="https://github.com/ganiyatyakub" target="_blank">
-                  <span class="popover-title">Current work</span>
-                  <span class="popover-sub">github.com/ganiyatyakub</span>
-                </a>
-              </div>
-            </div>
+            <a
+              href="https://github.com/tech-teni"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="bi bi-github"></i><span class="link-tag">GitHub</span></a
+            >
             <a
               href="mailto:yakubganiyat247@gmail.com"
               id="email-link"
@@ -189,7 +174,7 @@ https://templatemo.com/tm-557-grad-school
                   I am a senior frontend developer with over six years of experience
                   building responsive, accessible, data-heavy web applications. For
                   the last three years I have worked in health information systems,
-                  leading frontend modules on LAMISPlus, a national electronic
+                  leading frontend modules on LAMISPlus, an electronic
                   medical records platform used across more than 180 facilities. I
                   specialise in React and TypeScript, data visualization and
                   performance at scale, and I also work across the stack with
@@ -428,7 +413,7 @@ https://templatemo.com/tm-557-grad-school
         <div class="project-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-lamisplus-title">
           <button type="button" class="project-modal-close" data-close-modal aria-label="Close">&times;</button>
           <p class="category">Health Information Systems &middot; Flagship</p>
-          <h3 id="modal-lamisplus-title">LAMISPlus &mdash; National EMR Platform</h3>
+          <h3 id="modal-lamisplus-title">LAMISPlus &mdash; EMR Platform</h3>
           <p>
             An electronic medical records platform used across
             180+ facilities with 2M+ patient records.
@@ -787,14 +772,13 @@ https://templatemo.com/tm-557-grad-school
                 </a>
               </li>
               <li class="list-inline-item">
-                <button
-                  type="button"
-                  class="social-link rounded-circle text-white mr-3 github-trigger-btn"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  aria-label="GitHub accounts"
+                <a
+                  class="social-link rounded-circle text-white mr-3"
+                  href="https://github.com/tech-teni"
+                  target="_blank"
+                  aria-label="GitHub"
                   ><i class="bi bi-github" style="font-size: 50px !important; "></i>
-                </button>
+                </a>
               </li>
             </ul>
 
@@ -1057,35 +1041,6 @@ line-height: 30px;
         if (e.key === "Escape") {
           $(".project-modal.open").removeClass("open");
           $("body").removeClass("modal-open");
-        }
-      });
-
-      $("body").append($("#github-menu"));
-
-      $(".github-trigger-btn").on("click", function (e) {
-        e.stopPropagation();
-        var isOpen = $("#github-menu").hasClass("open");
-        if (!isOpen) {
-          var rect = this.getBoundingClientRect();
-          var $menu = $("#github-menu");
-          var menuWidth = $menu.outerWidth() || 220;
-          var left = rect.left + rect.width / 2 - menuWidth / 2;
-          left = Math.max(12, Math.min(left, window.innerWidth - menuWidth - 12));
-          $menu.css({ top: rect.bottom + 16, left: left });
-        }
-        $("#github-menu").toggleClass("open", !isOpen);
-        $(".github-trigger-btn").attr("aria-expanded", !isOpen);
-      });
-
-      $(document).on("click", function () {
-        $("#github-menu").removeClass("open");
-        $(".github-trigger-btn").attr("aria-expanded", "false");
-      });
-
-      $(document).on("keydown", function (e) {
-        if (e.key === "Escape") {
-          $("#github-menu").removeClass("open");
-          $(".github-trigger-btn").attr("aria-expanded", "false");
         }
       });
 
