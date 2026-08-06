@@ -2028,11 +2028,18 @@ footer p a:hover {
 
 .skills-label {
   flex: 0 0 220px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: 'JetBrains Mono', monospace;
   color: #00f5ff;
   font-size: 13px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+}
+
+.skills-label i {
+  font-size: 16px;
 }
 
 .skills-items {
@@ -2051,11 +2058,23 @@ footer p a:hover {
 @media screen and (max-width: 700px) {
   .skills-row {
     flex-direction: column;
-    gap: 8px;
+    flex-wrap: nowrap;
+    gap: 6px;
+    padding: 12px 0;
   }
 
   .skills-label {
     flex: none;
+  }
+
+  .skills-items {
+    flex: none;
+    width: 100%;
+    line-height: 1.5;
+  }
+
+  .skills-items span:not(:last-child)::after {
+    margin: 0 6px;
   }
 }
 
